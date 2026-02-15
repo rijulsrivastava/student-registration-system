@@ -12,5 +12,5 @@
   <li>Data should retain after reloading the page</li>
 </ol>
 
-<h2> GitHub Linl </h2>
+<h2> GitHub LinK </h2>
 <p> https://github.com/rijulsrivastava/student-registration-system.git </p>
