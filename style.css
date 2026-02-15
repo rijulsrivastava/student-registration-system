@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: #d1d5db;
+  padding: 20px;
+}
+
+/* Header section */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header p {
+  margin-top: 10px;
+  color: rgba(30, 59, 138, 0.6);
+}
+
+/* Form section */
+#formSection {
+  background: #cdcdcd;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#firstName,
+#lastName {
+  flex-grow: 1;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(30, 59, 138, 0.4);
+  border-radius: 10px;
+}
+form input::placeholder {
+  color: rgba(30, 59, 138, 1);
+}
+
+form input:focus::placeholder {
+  color: rgba(30, 59, 138, 0.6);
+}
+
+form input:focus {
+  outline: none;
+  border: 1px solid #1e3a8a;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #312e81;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: rgba(30, 59, 138, 0.9);
+}
+
+/* Table section */
+#displaySection {
+  margin-top: 40px;
+}
+
+.table-container {
+  max-height: 250px;
+  overflow-y: auto;
+}
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #312e81;
+  color: white;
+}
+
+tr:nth-child(2n + 1) {
+  background-color: #cdcdcd;
+}
+tr:nth-child(2n) {
+  background-color: rgba(30, 59, 138, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.delete-button {
+  background: #dc3545;
+  color: white;
+}
+
+.edit-button {
+  background: #ffa500;
+  color: white;
+}
+
+.action-button {
+  padding: 5px 8px;
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* To make webpage Responsive */
+@media (width <= 640px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  header {
+    margin: 10px;
+  }
+
+  th,
+  td {
+    font-size: 12px;
+  }
+
+  tr {
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  td {
+    text-align: left;
+    padding: 5px 10px;
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td::before {
+    position: absolute;
+    left: 10px;
+    width: 40%;
+    font-weight: bold;
+  }
+  #firstName,
+  #lastName {
+    width: 100%;
+  }
+
+  table * {
+    display: block;
+  }
+  thead {
+    display: none;
+  }
+  #studentRecord {
+    background-color: #d1d5db;
+  }
+  .button-div {
+    display: flex;
+  }
+  .action-button {
+    width: 30%;
+    font-size: 75%;
+  }
+
+  td:nth-of-type(1)::before {
+    content: "Student Name";
+  }
+  td:nth-of-type(2)::before {
+    content: "Student ID";
+  }
+  td:nth-of-type(3)::before {
+    content: "Email";
+  }
+  td:nth-of-type(4)::before {
+    content: "Contact";
+  }
+
+  #form input,
+  #form > button {
+    align-self: center;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  #form > button {
+    width: 80%;
+  }
+
+  #form div {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #formSection {
+    width: 80%;
+  }
+  #displaySection {
+    width: 100%;
+  }
+}
+
+@media (width > 640px) and (width <= 1024px) {
+  #formSection {
+    max-width: 80%;
+  }
+}
+
+@media (width>1024px) {
+  #formSection {
+    max-width: 60%;
+  }
+  #form input,
+  button {
+    font-size: 20px;
+    padding: 15px;
+  }
+  h1 {
+    font-size: 54px;
+  }
+  p {
+    font-size: 24px;
+  }
+
+  table * {
+    font-size: 110%;
+  }
+  .table-container {
+    max-height: 400px;
+  }
+}
