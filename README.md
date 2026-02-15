@@ -11,3 +11,6 @@
   <li>Able to delete particular record</li>
   <li>Data should retain after reloading the page</li>
 </ol>
+
+<h2> GitHub Linl </h2>
+<p> https://github.com/rijulsrivastava/student-registration-system.git </p>
