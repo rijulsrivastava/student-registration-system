@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Student Information System</h1>
+        <p><i>Portal for registering student details and maintaining it</i></p>
+    </header>
+    <main>
+        <section id="formSection">
+            <form id="form">
+                <div>
+                    <input type="text" id="firstName" placeholder="Enter First Name" required>
+                    <input type="text" id="lastName" placeholder="Enter Last Name">
+                </div>
+                <input type="number" id="studentId" placeholder="Enter Student ID" required>
+                <input type="email" name="" id="email" placeholder="Enter your email" required>
+                <input type="number" id="contactNumber" placeholder="Enter contact number" required>
+                <button type="submit">Register New Entry</button>
+            </form>
+        </section>
+
+
+        <section id="displaySection">
+            <h1>Registered Students</h1>
+            <div class="table-container" id="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student ID</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentRecord">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
